@@ -20,7 +20,7 @@ def upload_video():
     source = cv2.VideoCapture('static/' + filename)
     frame_width = int(source.get(3))
     frame_height = int(source.get(4))
-    size = (frame_height, frame_width)
+    size = (frame_width, frame_height)
     result = cv2.VideoWriter('static/' + 'blackandwhite.mp4', cv2.VideoWriter_fourcc(*'mp4v'), 30 , size, 0)
     try:
         while True:
